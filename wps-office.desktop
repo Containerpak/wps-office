@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=WPS Office
+Comment=Create and edit documents, spreadsheets and presentations.
+Exec=wps %F
+Icon=wps-office
+Terminal=false
+Categories=Office;WordProcessor;Spreadsheet;Presentation;
