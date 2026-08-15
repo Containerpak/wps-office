@@ -8,7 +8,7 @@ LABEL org.opencontainers.image.source="https://github.com/Containerpak/wps-offic
 
 RUN --mount=type=bind,from=source,source=/tmp/app.deb,target=/run/app.deb \
     apt-get update && \
-    apt-get install -y --no-install-recommends bsdextrautils && \
+    apt-get install -y --no-install-recommends bsdextrautils xdg-utils && \
     apt-get install -y --no-install-recommends /run/app.deb && \
     apt-get purge -y bsdextrautils && \
     cpak-clean-junk
