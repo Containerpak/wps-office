@@ -1,11 +1,19 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v2.json",
-  "manifest_version": "2.0",
+  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v3.json",
+  "manifest_version": "3.0",
   "name": "WPS Office",
   "description": "Create and edit documents, spreadsheets and presentations.",
   "version": "11.1.0.11723",
-  "image": "ghcr.io/containerpak/wps-office:main",
-  "runtime_sources": [{"name": "wps-office_11.1.0.11723.XA_amd64.deb", "url": "https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/11723/wps-office_11.1.0.11723.XA_amd64.deb", "sha256": "fe6326210f69d94efdbf2728914d293036be391b93a614f58cd0e1ff1d4923b3", "size": 318892996, "installer": "dpkg"}],
+  "image": "ghcr.io/containerpak/wps-office@sha256:1432a44988c9ed7ee5868161f0e2d774a0c3a986b4c394ad22c3db835c973c7f",
+  "runtime_sources": [
+    {
+      "name": "wps-office_11.1.0.11723.XA_amd64.deb",
+      "url": "https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/11723/wps-office_11.1.0.11723.XA_amd64.deb",
+      "sha256": "fe6326210f69d94efdbf2728914d293036be391b93a614f58cd0e1ff1d4923b3",
+      "size": 318892996,
+      "installer": "dpkg"
+    }
+  ],
   "binaries": [
     "/usr/bin/wps"
   ],
@@ -16,16 +24,11 @@
   "addons": [],
   "idle_time": 0,
   "override": {
-    "socketX11": true,
     "socketWayland": true,
     "socketPulseAudio": false,
-    "socketSessionBus": true,
-    "socketSystemBus": false,
     "socketSshAgent": false,
     "socketCups": true,
     "socketGpgAgent": false,
-    "socketAtSpiBus": true,
-    "socketBluetooth": false,
     "deviceDri": true,
     "deviceKvm": false,
     "deviceShm": true,
@@ -62,7 +65,6 @@
     "memoryMaxMB": 0,
     "cpuQuota": 0,
     "pidsMax": 0,
-    "asRoot": false,
-    "allowedHostCommands": []
+    "asRoot": false
   }
 }
