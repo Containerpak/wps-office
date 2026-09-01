@@ -4,7 +4,7 @@
   "name": "WPS Office",
   "description": "Create and edit documents, spreadsheets and presentations.",
   "version": "11.1.0.11723",
-  "image": "ghcr.io/containerpak/wps-office@sha256:546c04dcdd76fa49cf978e69c7d2a6e3c181b6523f0440a507c6d9b67508f36e",
+  "image": "ghcr.io/containerpak/wps-office@sha256:8ce821c9e15c8e4ca71083a4082eb8e4d0f650814a44c6b6b713d4c857533a35",
   "runtime_sources": [
     {
       "name": "wps-office_11.1.0.11723.XA_amd64.deb",
